@@ -1,5 +1,4 @@
 const API = 'https://api.github.com/users';
-const KEY = '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';
 
 function GitHubApi() {
 	const error = document.querySelector('.error');
@@ -42,7 +41,6 @@ function GitHubApi() {
 		const params = {
 			method: method,
 			headers: {
-				'Authorization': `Bearer ${KEY}`,
 				'accept': 'application/vnd.github+json',
 				'X-GitHub-Api-Version': '2022-11-28',
 			},
